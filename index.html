@@ -1,1 +1,61 @@
-<img src="profile.jpg" alt="นิยตา หอมเหล็ก" class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500">
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niyata Homlek - Academic Portfolio</title>
+    <!-- Google Fonts: Prompt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Prompt', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed selection:bg-pink-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold bg-gradient-to-r from-pink-500 to-rose-600 bg-clip-text text-transparent">
+                Niyata.H
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-pink-500 transition-colors">เกี่ยวกับฉัน</a>
+                <a href="#education" class="hover:text-pink-500 transition-colors">ประวัติการศึกษา</a>
+                <a href="#skills" class="hover:text-pink-500 transition-colors">ทักษะ</a>
+                <a href="#experience" class="hover:text-pink-500 transition-colors">ประสบการณ์</a>
+                <a href="#contact" class="hover:text-pink-500 transition-colors">ติดต่อ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-pink-100/70 via-pink-50/40 to-slate-50 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            
+            <!-- Profile Image Container -->
+            <div class="flex-1 flex justify-center z-10 order-1 md:order-2">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-3xl bg-gradient-to-tr from-pink-400 to-rose-500 p-2 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-300">
+                    <div class="w-full h-full rounded-[22px] overflow-hidden bg-white shadow-inner flex items-center justify-center">
+                        <!-- หมายเหตุ: นำไฟล์รูปภาพขึ้น GitHub แล้วตั้งชื่อว่า profile.jpg หรือใส่ Direct Link รูปภาพตรงนี้ -->
+                        <img src="profile.jpg" alt="นิยตา หอมเหล็ก" class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center p-6 text-pink-500\'><i class=\'fa-solid fa-user-graduate text-6xl mb-2\'></i><p class=\'text-xs text-slate-500\'>อัปโหลดไฟล์ profile.jpg ขึ้น GitHub เพื่อแสดงรูปภาพ</p></div>';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text Content -->
+            <div class="flex-1 text-center md:text-left z-10 order-2 md:order-1">
+                <span class="inline-block px-4 py-1
